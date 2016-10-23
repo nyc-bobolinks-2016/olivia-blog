@@ -415,3 +415,259 @@ Processing by ArticlesController#new as HTML
 Completed 200 OK in 61ms (Views: 57.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/articles/new" for ::1 at 2016-10-23 15:51:03 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/apprentice/bobo/oliviq/olivia-blog/app/views/articles/new.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+....append=  form_for :article url: article_path do |f| @output...
+...                               ^):
+  
+app/views/articles/new.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (104.8ms)
+Started GET "/articles/new" for ::1 at 2016-10-23 15:51:43 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"articles"} missing required keys: [:id]):
+    1: <h1>New Article</h1>
+    2: 
+    3: <%= form_for :article, url: article_path do |f| %>
+    4: <p>
+    5:   <%= f.label :title %><br>
+    6:   <%= f.text_field :title %>
+  
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb__178895273104207047_70339146483800'
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.0ms)
+Started GET "/articles/new" for ::1 at 2016-10-23 15:51:45 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"articles"} missing required keys: [:id]):
+    1: <h1>New Article</h1>
+    2: 
+    3: <%= form_for :article, url: article_path do |f| %>
+    4: <p>
+    5:   <%= f.label :title %><br>
+    6:   <%= f.text_field :title %>
+  
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb__178895273104207047_70339146156480'
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.3ms)
+Started GET "/articles/new" for ::1 at 2016-10-23 15:52:10 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 221ms (Views: 219.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2016-10-23 15:52:16 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZOrgNZDrbp7jwOuxHvtJa+V6ObGoC9n2uOecMI0fU/dZcy5wNXgF27eGg94naVOrKAi/53S3d+j/e0iqAXN0NA==", "article"=>{"title"=>"moooo", "text"=>"mofbhdsjf"}, "commit"=>"Save Article"}
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 65ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for ::1 at 2016-10-23 15:57:48 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2016-10-23 15:57:54 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v3mI5gt5LD0GtwSrdxCVFFTlv6zH23tOpW3laSL8MvSC4EajrupHeFLxbMROgo/UmZc5+htn1VDi8THzrpAVNw==", "article"=>{"title"=>"moo", "text"=>"la la la la"}, "commit"=>"Save Article"}
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateArticles (20161023195941)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161023195941"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-10-23 20:02:53 UTC], ["updated_at", 2016-10-23 20:02:53 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started POST "/articles" for ::1 at 2016-10-23 16:06:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v3mI5gt5LD0GtwSrdxCVFFTlv6zH23tOpW3laSL8MvSC4EajrupHeFLxbMROgo/UmZc5+htn1VDi8THzrpAVNw==", "article"=>{"title"=>"moo", "text"=>"la la la la"}, "commit"=>"Save Article"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/articles_controller.rb:6:in `create'
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.5ms)
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (103.9ms)
+Started GET "/articles/new" for ::1 at 2016-10-23 16:17:54 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 41ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2016-10-23 16:18:01 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RLZqN7uq0kEQkda3BzQGcz3CW+ouiQ7jCUDDrZoYpyh5L6RyHjm5BETXvtg+phyz8LDdvPI1oP1O3Bc3FnSA6w==", "article"=>{"title"=>"LA LA LA", "text"=>"mo momooomooooo"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "LA LA LA"], ["text", "mo momooomooooo"], ["created_at", 2016-10-23 20:18:01 UTC], ["updated_at", 2016-10-23 20:18:01 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 23ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/articles/1" for ::1 at 2016-10-23 16:18:01 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 69ms (Views: 28.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for ::1 at 2016-10-23 16:21:44 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for ::1 at 2016-10-23 16:21:47 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (146.5ms)
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `each' for #<#<Class:0x007ff239c82700>:0x007ff2399a95d8>):
+     5:     <th>Text</th>
+     6:   </tr>
+     7: 
+     8:   <% @articles.each each do |article| %>
+     9:   <tr>
+    10:     <td> <%= article.title %> </td>
+    11:     <td> <%= article.text %> </td>
+  
+app/views/articles/index.html.erb:8:in `_app_views_articles_index_html_erb__525093924138919270_70339162623980'
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.3ms)
+Started GET "/articles" for ::1 at 2016-10-23 16:22:17 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (118.4ms)
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `each' for #<#<Class:0x007ff239c82700>:0x007ff239862d50>):
+     5:     <th>Text</th>
+     6:   </tr>
+     7: 
+     8:   <% @articles.each each do |article| %>
+     9:   <tr>
+    10:     <td> <%= article.title %> </td>
+    11:     <td> <%= article.text %> </td>
+  
+app/views/articles/index.html.erb:8:in `_app_views_articles_index_html_erb__525093924138919270_70339161965260'
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.7ms)
+Started GET "/articles" for ::1 at 2016-10-23 16:22:34 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (89.6ms)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `line_to' for #<#<Class:0x007ff239c82700>:0x007ff2372385d0>
+Did you mean?  link_to):
+     9:   <tr>
+    10:     <td> <%= article.title %> </td>
+    11:     <td> <%= article.text %> </td>
+    12:     <td> <%= line_to 'Show', article_path(article)%> </td>
+    13:   </tr>
+    14:   <%end%>
+    15: </table>
+  
+app/views/articles/index.html.erb:12:in `block in _app_views_articles_index_html_erb__525093924138919270_70339141946720'
+app/views/articles/index.html.erb:8:in `_app_views_articles_index_html_erb__525093924138919270_70339141946720'
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.0ms)
+Started GET "/articles" for ::1 at 2016-10-23 16:22:52 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.1ms)
+
+
